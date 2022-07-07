@@ -6,6 +6,10 @@
 html{
     width: 100%;
 }
+body{
+    margin: 0;
+    padding: 0;
+}
 
 /*HEADER*/
 
@@ -99,24 +103,27 @@ nav > ul{
     background-size: cover;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 .title-about{
-    padding-top: 150px;
+    position: relative;
+    top: 150px;
+    margin-left: 180px;
     color: white;
     text-align: left;
-    padding-left: 180px;
-    margin: 0 auto;
     font-size: 150px;
     font-family: 'Courier New';
 }
 
 .subtitle-about{
+    position: relative;
+    margin-left: 220px;
+    top: 150px;
     font-family: 'Courier New';
     font-size: 30px;
     color: white;
     text-align: left;
-    padding-left: 220px;
 }
 
 .button-menu{
@@ -124,8 +131,9 @@ nav > ul{
     font-size: 35px;
     font-family: courier;
     padding: 10px;
+    box-sizing: content-box;
     position: relative;
-    top: 40px;
+    top: 190px;
     left: 330px;
 }
 
@@ -135,6 +143,60 @@ nav > ul{
     transform: scale(1.05);
     margin: 0 auto;
 }
+
+/*MEDIA ABOUT*/
+@media (max-width: 840px){
+    .title-about{ 
+        font-size: 90px;
+    }
+    .subtitle-about{
+        font-size: 15px;
+    }
+    .button-menu{
+        font-size: 15px;
+        top: 160px;
+        left: 250px
+    }
+}
+
+@media (max-width: 620px){
+    .title-about{
+        font-size: 50px;
+        margin-left: 120px;
+    }
+    .subtitle-about{
+        font-size: 14px;
+        margin-left: 130px;
+    }
+    .button-menu{
+        font-size: 10px;
+        left: 200px;
+    }
+}
+
+@media (max-width: 435px){
+    .title-about{
+        margin-left: 80px;
+    }
+    .subtitle-about{
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 290px){
+    .title-about{
+        font-size: 25px;
+        margin-left: 40px;
+    }
+    .subtitle-about{
+        font-size: 11px;
+        margin-left: 50px;
+    }
+    .button-menu{
+        left: 80px;
+    }
+}
+/*MEDIA ABOUT FINISHED*/
 /*SECTION ABOUT FINISHED*/
 img{
     height: 100px;
