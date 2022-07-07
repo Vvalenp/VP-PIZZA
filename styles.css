@@ -181,6 +181,9 @@ nav > ul{
     .subtitle-about{
         margin-left: 100px;
     }
+    .button-menu{
+        left: 150px;
+    }
 }
 
 @media (max-width: 290px){
