@@ -148,6 +148,7 @@ nav > ul{
 @media (max-width: 840px){
     .title-about{ 
         font-size: 90px;
+        margin-top: 120px;
     }
     .subtitle-about{
         font-size: 15px;
@@ -163,6 +164,7 @@ nav > ul{
     .title-about{
         font-size: 50px;
         margin-left: 120px;
+        margin-top: 120px;
     }
     .subtitle-about{
         font-size: 14px;
@@ -177,6 +179,7 @@ nav > ul{
 @media (max-width: 435px){
     .title-about{
         margin-left: 80px;
+        margin-top: 120px;
     }
     .subtitle-about{
         margin-left: 100px;
@@ -190,6 +193,7 @@ nav > ul{
     .title-about{
         font-size: 25px;
         margin-left: 40px;
+        margin-top: 120px;
     }
     .subtitle-about{
         font-size: 11px;
