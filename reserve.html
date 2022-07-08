@@ -9,20 +9,32 @@
 </head>
 <body>
 
-    <h1 class="title-reserve">RESERVE</h1>
+    <header>
+        <div class="name-restaurant">VP PIZZA'S</div>
+        <img  class="logo" src="https://us.123rf.com/450wm/asmati/asmati1702/asmati170211925/73034184-pizza-signo-simple-icono-de-naranja-sobre-fondo-negro-viejo-monitor-de-f%C3%B3sforo-crt-.jpg" alt="pizza logo">
+        <nav class="navbar">
+        <ul>
+            <li><a class="nav-link" href="index.html">Back</a>
+            </li>
+        </ul>
+        </nav>
+    </header>
 
+    <section id="reserve">
+    <h1 class="title-reserve">RESERVE</h1>
     <form class="reserve-form" action="https://formsubmit.co/simbadelmarino21@gmail.com" method="POST">
-        <p class="names-form">Name</p>
-        <input type="text" name="Name" id="Name">
-        <p class="names-form">Email</p>
-        <input type="email" name="Email" id="Email">
-        <p class="names-form">How many people?</p>
+        <p class="names-form">Name:</p>
+        <input type="text" name="Name" id="Name" placeholder="Your name...">
+        <p class="names-form">Email:</p>
+        <input type="email" name="Email" id="Email" placeholder="Your email...">
+        <p class="names-form">How many people?:</p>
         <input type="number" name="Number of people">
-        <p class="names-form">For what date?</p>
+        <p class="names-form">For what date?:</p>
         <input type="date" name="Date">
         <br>
         <br>
-        <input type="submit" name="Submit">
+        <input type="submit" name="Submit" class="submit">
     </form>
+    </section>
 </body>
 </html>
