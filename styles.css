@@ -428,3 +428,68 @@ hr{
 /*SECTION DRINKS FINISHED*/
 /*SECTION MENU FINISHED*/
 
+/*SECTION RESERVE*/
+#reserve{
+    margin: 0 auto;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url("https://media.istockphoto.com/vectors/abstract-bright-white-background-geometric-texture-vector-id1215007804?k=20&m=1215007804&s=170667a&w=0&h=v59RtiezcG4KZEuWXzYOVUWT-eRCiUKNJMOLp_YqT8k=");
+    height: 66.6vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 240px;
+}
+
+.title-reserve{
+    font-family: cursive;
+    font-size: 67px;
+    position: relative;
+    bottom: 100px;
+}
+
+.reserve-form{
+    padding: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: -85px;
+}
+
+.names-form{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input{
+    padding: 2px;
+}
+
+.submit{
+    background-color: green;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px;
+}
+
+.submit:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 0.1s;
+}
+
+/*MEDIA RESERVE*/
+@media (max-width: 320px){
+    .title-reserve{
+        font-size: 40px;
+    }
+}
+/*MEDIA RESERVE FINISHED*/
+
+/*SECTION RESERVE FINISHED*/
