@@ -21,6 +21,7 @@ header{
     min-height: 80px;
     background-color: rgb(0, 0, 0);
     color: white;
+    z-index: 1;
 }
 
 .name-restaurant{
@@ -142,6 +143,7 @@ nav > ul{
     background-color: rgb(193, 129, 10);
     cursor: pointer;
     transform: scale(1.05);
+    transition: all 0.3s;
     margin: 0 auto;
 }
 
@@ -163,7 +165,7 @@ nav > ul{
 
 @media (max-width: 620px){
     .title-about{
-        font-size: 50px;
+        font-size: 60px;
         margin-left: 120px;
         margin-top: 120px;
     }
@@ -206,7 +208,223 @@ nav > ul{
 }
 /*MEDIA ABOUT FINISHED*/
 /*SECTION ABOUT FINISHED*/
-img{
-    height: 100px;
-    width: 100px;
+
+/*SECTION MENU*/
+#menu-title{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    height: 40vh;
+    margin: 0 auto;
 }
+
+.menu-title{
+    display: inline-block;
+    position: relative;
+    margin-top: 100px;
+    font-size: 60px;
+    color: white;
+    font-family: Times 'Times New Roman';
+}
+
+.menu-subtitle{
+    color: rgb(172, 112, 0);
+    font-weight: bold; 
+    font-size: 40px;
+    margin-top: 20px;
+    letter-spacing: 3px;
+}
+
+.menu-title::after, .menu-title::before{
+    content: '';
+    position: absolute;
+    width: 190px;
+    height: 3px;
+    background-color: white;
+    top: 0.6em;
+}
+
+/*MEDIA AFTER BEFORE*/
+ 
+@media (max-width: 900px){
+    .menu-title{
+        font-size: 30px;
+    }
+    .menu-subtitle{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px){
+    #menu-title{
+        padding-top: 30px;
+    }
+    .menu-title{
+        font-size: 25px;
+    }
+    .menu-subtitle{
+        font-size: 15px;
+    }
+    .menu-title::after, .menu-title::before{
+        width: 70px;
+    }
+    .menu-title::before{
+        left: -80px;
+    }
+    .menu-title::after{
+        right: -80px;
+    }
+}
+
+@media (max-width: 340px){
+    .menu-title{
+        font-size: 17px;
+    }
+    .menu-subtitle{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 701px){
+    .menu-title::before{
+    left: -210px;
+    }
+
+    .menu-title::after{
+    right: -210px;
+    }
+}
+/*MEDIA AFTER BEFORE FINISHED*/
+/*SECTION PIZZA*/
+#pizzas{
+    position: relative;
+    color: white;
+    background-color: black;
+    height: 100vh;
+}
+
+.pizzas-title{
+    font-size: 50px;
+    font-family: cursive;
+    padding: 10px;
+}
+
+hr{
+    max-width: 400px;
+}
+
+.items{
+    display: flex;
+    position: relative;
+    top: 40px;
+}
+
+.items-name{
+    position: relative;
+    left: 170px;
+    width: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.items-price{
+    text-align: right;
+    width: 30%;
+    font-size: 17px;
+}
+/*SECTION PIZZA FINISHED*/
+/*MEDIAS PIZZA/DRINKS*/
+@media (max-width: 700px){
+    .items{
+        left: -40px
+    }
+}
+
+@media (max-width: 600px){
+    .items{
+        left: -80px;
+    }
+    .items-price{
+        width: 50%;
+        position: relative;
+        left: 90px;
+    }
+}
+
+@media (max-width: 400px){
+    .items{
+        left: -130px;
+    }
+    .items-price{
+        position: relative;
+        left: 170px;
+    }
+}
+/*MEDIAS PIZZA/DRINKS FINISHED*/
+/*SECTION DRINKS*/
+#drinks{
+    position: relative;
+    color: white;
+    background-color: black;
+    height: 100vh;
+    margin-bottom: 0;
+}
+
+.drinks-title{
+    font-size: 50px;
+    font-family: cursive;
+    padding: 10px;
+}
+
+hr{
+    max-width: 400px;
+}
+
+.items{
+    display: flex;
+    position: relative;
+    top: 40px;
+}
+
+.items-name{
+    position: relative;
+    left: 170px;
+    width: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.items-price{
+    text-align: right;
+    width: 30%;
+    font-size: 17px;
+}
+
+.item-description{
+    position: relative;
+    padding-left: 170px;
+    top: -20px;
+}
+
+/*MEDIA ITEMS-DESCRIPTION*/
+@media (max-width: 700px){
+    .item-description{
+        padding-left: 130px;
+    }
+}
+@media (max-width: 600px){
+    .item-description{
+        padding-left: 90px;
+    }
+}
+@media (max-width: 400px){
+    .item-description{
+        padding-left: 40px;
+    }
+}
+/*MEDIA ITEMS-DESCRIPTION FINISHED*/
+/*SECTION DRINKS FINISHED*/
+/*SECTION MENU FINISHED*/
+
