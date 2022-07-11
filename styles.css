@@ -168,38 +168,49 @@ nav > ul{
         font-size: 60px;
         margin-left: 120px;
         margin-top: 120px;
+        position: relative;
+        right: 50px;
     }
     .subtitle-about{
         font-size: 14px;
         margin-left: 130px;
+        position: relative;
+        right: 50px;
     }
     .button-menu{
-        font-size: 10px;
+        font-size: 15px;
         left: 170px;
     }
 }
 
 @media (max-width: 435px){
     .title-about{
-        margin-left: 80px;
         margin-top: 120px;
+        font-size: 45px;
+        position: relative;
+        right: 60px;
     }
     .subtitle-about{
         margin-left: 100px;
+        position: relative;
+        right: 20px;
+        font-size: 0px;
     }
     .button-menu{
-        left: 150px;
+        left: 110px;
     }
 }
 
 @media (max-width: 290px){
     .title-about{
-        font-size: 25px;
+        font-size: 45px;
         margin-left: 40px;
         margin-top: 120px;
+        position: relative;
+        right: 8px;
     }
     .subtitle-about{
-        font-size: 11px;
+        font-size: 0px;
         margin-left: 50px;
     }
     .button-menu{
