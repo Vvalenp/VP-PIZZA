@@ -165,28 +165,29 @@ nav > ul{
 
 @media (max-width: 620px){
     .title-about{
-        font-size: 60px;
-        margin-left: 120px;
-        margin-top: 120px;
+        font-size: 65px;
+        margin: 0 auto;
         position: relative;
-        right: 50px;
+        left: 110px;
+        top: 310px; 
     }
     .subtitle-about{
-        font-size: 14px;
-        margin-left: 130px;
+        font-size: 17px;
+        margin: 0 auto;
         position: relative;
-        right: 50px;
+        left: 120px;
+        top: 315px;
     }
     .button-menu{
-        font-size: 15px;
+        font-size: 25px;
         left: 170px;
+        top: 330px;
     }
 }
 
 @media (max-width: 435px){
     .title-about{
-        margin-top: 120px;
-        font-size: 45px;
+        font-size: 50px;
         position: relative;
         right: 10px;
     }
@@ -198,15 +199,18 @@ nav > ul{
     }
     .button-menu{
         left: 140px;
+        font-size: 20px;
+        position: relative;
+        top: 310px;
     }
 }
 
 @media (max-width: 339px){
     .title-about{
-        margin-top: 120px;
+        margin: 0 auto;
         font-size: 45px;
         position: relative;
-        right: 50px;
+        left: 70px;
     }
     .subtitle-about{
         margin-left: 100px;
@@ -215,24 +219,24 @@ nav > ul{
         font-size: 0px;
     }
     .button-menu{
-        left: 110px;
+        left: 105px;
+        font-size: 17px;
     }
 }
 
 @media (max-width: 290px){
     .title-about{
         font-size: 45px;
-        margin-left: 40px;
-        margin-top: 120px;
+        margin: 0 auto;
         position: relative;
-        right: 8px;
+        left: 40px;
     }
     .subtitle-about{
         font-size: 0px;
         margin-left: 50px;
     }
     .button-menu{
-        left: 80px;
+        left: 70px;
     }
 }
 /*MEDIA ABOUT FINISHED*/
