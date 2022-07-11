@@ -188,7 +188,25 @@ nav > ul{
         margin-top: 120px;
         font-size: 45px;
         position: relative;
-        right: 60px;
+        right: 10px;
+    }
+    .subtitle-about{
+        margin-left: 100px;
+        position: relative;
+        right: 20px;
+        font-size: 0px;
+    }
+    .button-menu{
+        left: 140px;
+    }
+}
+
+@media (max-width: 339px){
+    .title-about{
+        margin-top: 120px;
+        font-size: 45px;
+        position: relative;
+        right: 50px;
     }
     .subtitle-about{
         margin-left: 100px;
