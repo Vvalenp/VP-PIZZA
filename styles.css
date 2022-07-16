@@ -40,7 +40,22 @@ header{
 
 nav{
     max-width: 100%;
-    
+    --state-pizza: scale(1); 
+    --state-menu: translate(+100%);
+    --state-close: scale(0);
+}
+
+
+.nav-pizza{
+    display: none;
+}
+.nav-close{
+    display: none;
+    transform: var(--state-close);
+    max-width: 50px;
+    max-height: 50px;
+    position: absolute;
+    bottom: 8px;
 }
 
 .nav-link{
@@ -50,7 +65,7 @@ nav{
     top: 30px;
     margin-left: 80px;
     margin-right: 50px;
-    padding: 0;
+    padding: 0; 
 }
 
 .nav-link:hover{
@@ -64,13 +79,56 @@ nav > ul{
 
 /*MEDIA HEADER*/
 @media (max-width: 830px){
-    .nav-link{
-        margin-left: 40px;
-        margin-right: 25px;
+    .name-restaurant{
+        position: relative;
+        top: 20px;
     }
+    
+    nav:target{
+        --state-pizza: scale(0); 
+        --state-menu: translate(0);
+        --state-close: scale(1);
+    }
+
+    nav > ul{
+        display: grid;
+        justify-content: space-between;
+        background-color: black;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 0;
+        align-content: center;
+        gap: 6em;
+        padding-left: 5%;
+        z-index: -1;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+
+        transform: var(--state-menu);
+        transition: .3s transform;
+    }
+
+    .nav-pizza, .nav-close{
+        cursor: pointer;
+        display: grid;
+        grid-column: -2/-1;
+        grid-row: 1/2;
+    }
+
+    .nav-pizza{
+        transform: var(--state-pizza);
+    }
+
     .logo{
         height: 60px;
         width: 60px;
+        position: relative;
+        top: 35px;
+        right: 190px;
     }
 }
 
@@ -85,6 +143,7 @@ nav > ul{
         left: 50px;
     }
     .logo{
+       display: none;
        width: 0;
        height: 0;
     }
